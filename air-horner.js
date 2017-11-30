@@ -281,7 +281,7 @@ class AirHorner extends HTMLElement {
 var Horn = function(src) {
   // The Horn Player.
   var noAudioContext = false;
-  var defaultAudioSrc = './sounds/airhorn.mp3';
+  var defaultAudioSrc = 'sounds/airhorn.mp3';
   var fallbackAudio;
   var audioCtx = (window.AudioContext || window.webkitAudioContext);
   var self = this;
@@ -327,7 +327,7 @@ var Horn = function(src) {
     var shouldLoop = opts.loop; // always loop if from an event.
     var loopStart = opts.loopStart || 0.24;
     var loopEnd = opts.loopEnd || 0.34;
-    var src = opts.src || './sounds/airhorn.mp3';
+    var src = opts.src || 'sounds/airhorn.mp3';
 
     if (noAudioContext) {
       fallbackAudio.loop = shouldLoop;
