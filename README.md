@@ -1,7 +1,7 @@
 # Air Horner
 
 This is an implementation of [Airhorner](https://github.com/PaulKinlan/air-horner) by [PaulKinlan](https://github.com/PaulKinlan)
-View his repo for tag/component details
+View that repo for tag/component details
 
 ## What is different from PaulKinlans implamentation then? 
 This implementations dependencies are checked in, so the component can be called from another domain across the web directly from the repository.
