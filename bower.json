@@ -1,9 +1,13 @@
 {
   "name": "air-horner",
-  "license": "Apache-2.0",
-  "authors": [
-    "Paul Kinlan <paul.kinlan@gmail.com>"
-  ],
+  "description": "air-horner polymer 2 component",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0"
+  },
+  "resolutions": {
+  },
   "keywords": [
     "web-components",
     "custom-element",
@@ -13,5 +17,5 @@
     "air-horner.js",
     "air-horner.html"
   ],
-  "version": "0.4.2"
+  "version": "0.4.3"
 }

@@ -1,6 +1,4 @@
-<!-- <script src="./air-horner.js"></script> -->
 <link rel="import" href="https://cdn.rawgit.com/ltomes/polymer-cdn/2.3.1/lib/polymer/polymer-element.html">
-
 <dom-module id="air-horner">
   <template>
     <custom-style>
@@ -192,6 +190,8 @@
         super();
         this._horn = new Horn;
         const startHandler = (e) => {
+          console.log('startHandler');
+          console.log(e);
           const hornOptions = {
             loop: true,
             loopStart: this.loopStart,
@@ -212,6 +212,8 @@
         };
 
         const stopHandler = (e) => {
+          console.log('stopHandler');
+          console.log(e);
           if (!!e == true) e.preventDefault();
           this.stop();
         }
@@ -303,7 +305,6 @@
     var shouldLoop = opts.loop; // always loop if from an event.
     var loopStart = opts.loopStart || 0.24;
     var loopEnd = opts.loopEnd || 0.34;
-    console.log(window.location.href);
     var src = opts.src || 'https://rawgit.com/ltomes/air-horner/master/sounds/airhorn.mp3'; //With external web components, paths must be hardcoded
 
     if (noAudioContext) {
