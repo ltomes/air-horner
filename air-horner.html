@@ -219,8 +219,8 @@
         this.addEventListener('mousedown', startHandler);
         this.addEventListener('touchstart', startHandler);
 
-        document.documentElement.addEventListener('mouseup', stopHandler);
-        document.documentElement.addEventListener('touchend', stopHandler);
+        this.addEventListener('mouseup', stopHandler);
+        this.addEventListener('touchend', stopHandler);
       }
       start(hornParams) {
         // Add to the element for slots
