@@ -7,7 +7,6 @@
     "web-component-tester": "Polymer/web-component-tester#^6.0.0"
   },
   "resolutions": {
-    "polymer": "^2.0.0"
   },
   "keywords": [
     "web-components",
@@ -18,5 +17,5 @@
     "air-horner.js",
     "air-horner.html"
   ],
-  "version": "0.4.2"
+  "version": "0.4.3"
 }
