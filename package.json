@@ -12,6 +12,5 @@
     },
     "scripts": {},
     "dependencies": {
-        "@polymer/polymer": "2.3.0"
     }
 }
