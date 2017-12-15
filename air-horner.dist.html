@@ -235,16 +235,16 @@
           this.classList.remove('horning');
           this.root.querySelector(".horn").classList.remove('horning');
           if (_ && _.where) {
-          console.log('_.where exists.')
-          let listOfPlays = [
-            { title: "Notes from Underground", author: "Dostoyevsky", year: 1864 },
-            { title: "Cymbeline", author: "Shakespeare", year: 1611 },
-            { title: "The Tempest", author: "Shakespeare", year: 1611 }
-          ];
-          console.log(_.where(listOfPlays, { author: "Shakespeare", year: 1611 }));
-        } else {
-          console.log('_ or _.where does not exist.')
-        }
+            console.log('_.where exists.')
+            let listOfPlays = [
+              { title: "Notes from Underground", author: "Dostoyevsky", year: 1864 },
+              { title: "Cymbeline", author: "Shakespeare", year: 1611 },
+              { title: "The Tempest", author: "Shakespeare", year: 1611 }
+            ];
+            console.log(_.where(listOfPlays, { author: "Shakespeare", year: 1611 }));
+          } else {
+            console.log('_ or _.where does not exist.')
+          }
         };
       }
 
