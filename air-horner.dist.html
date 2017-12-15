@@ -1,6 +1,6 @@
 <link rel="import" href="https://cdn.rawgit.com/ltomes/polymer-cdn/2.3.1/lib/polymer/polymer-element.html">
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js'></script>
-<dom-module id="air-horner">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js'></script>
+<dom-module id="air-horner-lodash">
   <template>
     <custom-style>
       <style>
@@ -247,12 +247,12 @@
         return this.getAttribute('src');
       }
 
-      static get is() { return 'air-horner'; }
+      static get is() { return 'air-horner-lodash'; }
       static get properties() {
         return {
           prop1: {
             type: String,
-            value: 'air-horner'
+            value: 'air-horner-lodash'
           }
         };
       }
@@ -353,16 +353,16 @@
         loadSound(function (decodedBuffer) {
           buffer = decodedBuffer;
         }, src);
-        if (_ && _.where) {
-          console.log('_.where exists.')
+        if (_ && _.filter) {
+          console.log('_.filter exists.')
           let listOfPlays = [
             { title: "Notes from Underground", author: "Dostoyevsky", year: 1864 },
             { title: "Cymbeline", author: "Shakespeare", year: 1611 },
             { title: "The Tempest", author: "Shakespeare", year: 1611 }
           ];
-          console.log(_.where(listOfPlays, { author: "Shakespeare", year: 1611 }));
+          console.log(_.filter(listOfPlays, { author: "Shakespeare", year: 1611 }));
         } else {
-          console.log('_ or _.where does not exist.')
+          console.log('_ or _.filter does not exist.')
         }
 
       };
