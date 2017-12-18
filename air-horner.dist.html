@@ -239,7 +239,6 @@
             var objects = [{ 'a': 1 }, { 'a': 2 }];
             if (_.pluck) {
               _.pluck(objects, 'a'); // ➜ [1, 2]
-
             } else {
               console.log('_.pluck does not exist.');
             }
@@ -263,29 +262,27 @@
             console.log('_ does not exist.');
           };
         };
-
       };
-    }
 
-    stop() {
-      this.classList.remove('horning');
-      this.root.querySelector(".horn").classList.remove('horning');
-      this._horn.stop();
-    }
+      stop() {
+        this.classList.remove('horning');
+        this.root.querySelector(".horn").classList.remove('horning');
+        this._horn.stop();
+      }
 
-    get src() {
-      return this.getAttribute('src');
-    }
+      get src() {
+        return this.getAttribute('src');
+      }
 
       static get is() { return 'air-horner-lodash-4-17-4'; }
       static get properties() {
-      return {
-        prop1: {
-          type: String,
-          value: 'air-horner-lodash-4-17-4'
-        }
-      };
-    }
+        return {
+          prop1: {
+            type: String,
+            value: 'air-horner-lodash-4-17-4'
+          }
+        };
+      }
     }
     var Horn = function (src) {
       // The Horn Player.
